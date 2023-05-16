@@ -1,21 +1,9 @@
-import { useEffect } from "react";
 import { Modal, Button, Form, Input } from "antd";
 import useStore from "../../store/store";
 
 const UserModal = (props: any) => {
   const [form] = Form.useForm();
   const { users } = useStore();
-
-  useEffect(() => {
-    // Set the initial form values based on props
-    form.setFieldsValue({
-      name: props.newUser.name,
-      lname: props.newUser.lname,
-      email: props.newUser.email,
-      position: props.newUser.position,
-      phoneNumber: props.newUser.phoneNumber,
-    });
-  }, [form, props.newUser]);
 
   const handleCancel = () => {
     props.setIsModalOpen(false);

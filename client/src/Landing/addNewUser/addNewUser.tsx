@@ -6,26 +6,12 @@ import { Button } from "antd";
 import { User } from "../../types/types";
 
 function AddNewUser(props: any) {
-  const [newUser, setNewUser] = useState<User>({
-    name: "",
-    lname: "",
-    email: "",
-    position: "",
-    phoneNumber: "",
-  });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
   };
 
   const onFinish = (values: User) => {
-    setNewUser({
-      name: values.name,
-      lname: values.lname,
-      email: values.email,
-      position: values.position,
-      phoneNumber: values.phoneNumber,
-    });
     let newUserForPost = {
       name: values.name,
       lname: values.lname,
@@ -55,12 +41,10 @@ function AddNewUser(props: any) {
       </Button>
       <UserModal
         onFinish={onFinish}
-        newUser={newUser}
         setIsModalOpen={setIsModalOpen}
         isModalOpen={isModalOpen}
         header="მომხმარებლის შექმნა"
         buttonTitle="დადასტურება"
-        setUser={setNewUser}
       />
     </div>
   );

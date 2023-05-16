@@ -3,6 +3,7 @@ import useStore from "../store/store";
 import axios from "axios";
 import "./landing.scss";
 import AddNewUser from "./addNewUser/addNewUser";
+import QRcodeGenerator from "../QRcodeGenerator/QRcodeGenerator";
 
 function LandingPage() {
   const {setUsers} = useStore();
@@ -32,6 +33,8 @@ function LandingPage() {
         setUpdateUserData={setUpdateUserData}
         updateUserData={updateUserData}
       />
+
+      <QRcodeGenerator/>
 
     </div>
   );

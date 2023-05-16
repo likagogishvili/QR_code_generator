@@ -33,9 +33,10 @@ exports.CreateUser = async (req, res, next) => {
       email: email,
       position: position,
       phoneNumber: phoneNumber,
-    }).then((res) => res.status(200).send('User Added')).catch((err) => res.status(400).send('Failed to add user'))
-
-  } catch (e) {
+    });
+    res.status(200).send('User Added');
+  } catch (error) {
+    console.error(error);
     res.status(400).send('Failed to add user');
   }
 };

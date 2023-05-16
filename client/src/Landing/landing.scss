@@ -1,4 +1,16 @@
 .main_container{
-  min-height: 73vh;
+  min-height: 80vh;
   padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_container{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto;
+  }
+  
 }

@@ -1,21 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-
-* {
-  font-family: Roboto;
-}
-
 .footer-distributed {
   background-color: #001628;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: normal 16px sans-serif;
   padding: 45px 50px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 .footer-distributed .footer-left p {
