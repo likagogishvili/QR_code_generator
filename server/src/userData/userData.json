@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Lika",
+    "lname": "Gogishvili",
+    "email": "gogishvililika2001@gmail.com",
+    "position": "React Developer",
+    "phoneNumber": "+995595411617",
+    "conpany": "National Statistics Office Of Georgia",
+    "website": "www.geostat.ge"
+  },
+  {
+    "name": "Maxo",
+    "lname": "Osadze",
+    "email": "mosadze@gmail.com",
+    "position": "NodeJS Developer",
+    "phoneNumber": "+995598890381",
+    "conpany": "National Statistics Office Of Georgia",
+    "website": "www.geostat.ge"
+  }
+]
