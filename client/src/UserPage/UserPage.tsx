@@ -76,7 +76,7 @@ END:VCARD`;
               </div>
               <div className="little_containers" onClick={handleEmailClick}>
                 <SendOutlined />
-                <p>მეილი</p>
+                <p>ელფოსტა</p>
               </div>
             </div>
           </section>
@@ -100,7 +100,7 @@ END:VCARD`;
               <MailOutlined />
               <div className="right_container">
                 <p>{user.email}</p>
-                <p className="grey">mail</p>
+                <p className="grey">ელფოსტა</p>
               </div>
             </div>
             <div className="otherInfo">

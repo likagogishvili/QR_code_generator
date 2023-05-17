@@ -23,3 +23,159 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* contrast and fontSize */
+
+:root {
+  --white-color: #fff;
+  --white-color2: #f4f4f4;
+  --text-color: #808083;
+  --black-color: #000;
+  --h1-color: rgb(50, 41, 124);
+  --main-gradient: radial-gradient(
+    68.52% 119.91% at 46.63% -26.57%,
+    #f4fbff 0%,
+    #e4f6ff 44.79%,
+    #dcf3ff 70.31%,
+    #b6e2ff 100%
+  );
+  --chart-white: #fff;
+  --gray-color: hsl(0, 0%, 50%);
+  --selection-color: #deebff;
+  --orange-color: #ffbd3d;
+  --map-color: #e0f5ff;
+  --glass-color: rgba(255, 255, 255, 0.4);
+  --blue-color: #21468b;
+  --blue-color2: #21468b;
+  --bone-color: #e5e5e5;
+  --h1-size: 1.5rem;
+  --h1-size2: 1.2rem;
+  --h1-size3: 0.8rem;
+  --selectFontSize: 1rem;
+  --h3-size: 1.625rem;
+  --h3-size2: 0.8rem;
+  --h3-sel: 0.7rem;
+
+  --h3-18px: 1.125rem;
+  --h4-size: 0.75rem;
+  --h5-size: 0.625rem;
+  --selection-size: 0.875rem;
+  --default-size: 1rem;
+}
+
+.contrast {
+  --white-color: #202020;
+  --white-color2: #202020;
+  --text-color: #808083;
+  --black-color: #cacaca;
+  --h1-color: rgb(146, 142, 179);
+  --main-gradient: #202020;
+  --chart-white: #303030;
+  --gray-color: #cacaca;
+  --selection-color: #4d4d4d;
+  --orange-color: #fff;
+  --map-color: #202020;
+  --glass-color: #303030;
+  --blue-color: #303030;
+  --blue-color2: #cacaca;
+  --bone-color: #202020;
+}
+
+.font-size-1 {
+  --h1-size: 1.6rem;
+  --h1-size2: 1.4rem;
+  --h1-size3: 1rem;
+  --selectFontSize: 1.1rem;
+  --h3-size: 1.825rem;
+  --h3-size2: 0.9rem;
+  --h3-sel: 0.8rem;
+
+  --h3-18px: 1.225rem;
+  --h4-size: 0.95rem;
+  --h5-size: 0.825rem;
+  --selection-size: 0.975rem;
+  --default-size: 1.2rem;
+}
+
+.font-size-2 {
+  --h1-size: 1.7rem;
+  --h1-size2: 1.6rem;
+  --h1-size3: 1.2rem;
+  --selectFontSize: 1.2rem;
+  --h3-size: 2.025rem;
+  --h3-size2: 1rem;
+  --h3-sel: 0.9rem;
+
+  --h3-18px: 1.325rem;
+  --h4-size: 1.035rem;
+  --h5-size: 1.025rem;
+  --selection-size: 1.075rem;
+  --default-size: 1.4rem;
+}
+
+/* contrast and fontSize */
+
+body {
+  margin: 0;
+  background-color: var(--white-color) !important;
+}
+
+*,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+button,
+h6 {
+  font-family: "FiraGO";
+  font-feature-settings: "case" on;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "FiraGO";
+  src: local("FiraGO"),
+    url("./assets/fonts/FiraGO-SemiBold.woff") format("truetype");
+}
+
+::selection {
+  background: #faa906;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1677ff;
+  /* color of the scroll thumb */
+}
+
+html {
+  scroll-behavior: smooth;
+}

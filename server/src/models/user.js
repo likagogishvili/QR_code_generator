@@ -38,7 +38,7 @@ const User = sequelize.define('users', {
         type: Sequelize.STRING,
         allowNull: false,
         defaultValue: 'www.geostat.ge',
-    }
+    },
 }, {})
 
 module.exports = User
