@@ -4,9 +4,10 @@ import axios from "axios";
 import "./landing.scss";
 import AddNewUser from "./addNewUser/addNewUser";
 import QRcodeGenerator from "../QRcodeGenerator/QRcodeGenerator";
+import Header from "../Header/Header"
 
 function LandingPage() {
-  const {setUsers} = useStore();
+  const { setUsers } = useStore();
   let usersURl = "http://192.168.0.141:3001/get-users";
   const [updateUserData, setUpdateUserData] = useState(false);
 
@@ -26,17 +27,18 @@ function LandingPage() {
     // eslint-disable-next-line
   }, [updateUserData]);
 
-
   return (
-    <div className="main_container">
-      <AddNewUser
-        setUpdateUserData={setUpdateUserData}
-        updateUserData={updateUserData}
-      />
+    <>
+      <Header />
+      <div className="main_container">
+        <AddNewUser
+          setUpdateUserData={setUpdateUserData}
+          updateUserData={updateUserData}
+        />
 
-      <QRcodeGenerator/>
-
-    </div>
+        <QRcodeGenerator />
+      </div>
+    </>
   );
 }
 

@@ -33,6 +33,7 @@ function UserPage() {
       .catch(function (error) {
         console.log(error);
       });
+    // eslint-disable-next-line
   }, []);
 
   const handlePhoneClick = () => {
@@ -46,7 +47,6 @@ function UserPage() {
       window.location.href = `mailto:${user.email}`;
     }
   };
-
   const generateVCard = () => {
     const vCardText = `BEGIN:VCARD
 VERSION:3.0
@@ -56,7 +56,7 @@ EMAIL;TYPE=WORK:${user?.email}
 END:VCARD`;
 
     const element = document.createElement("a");
-    const file = new Blob([vCardText], { type: "text/vcard" });
+    const file = new Blob([vCardText], { type: "application/octet-stream" });
     element.href = URL.createObjectURL(file);
     element.download = "contact.vcf";
     element.click();
