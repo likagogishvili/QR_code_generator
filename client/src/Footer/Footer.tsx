@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="footer-left">
         <p className="footer-links">
           <a className="link-1" href="/">
-            მთავარი გვერდი
+            საქართველოს სტატისტიკის ეროვნული სამსახური
           </a>
         </p>
-        <p>2023, საქსტატის ოფიციალური ვებგვერდი</p>
+        <p>© ყველა უფლება დაცულია</p>
       </div>
     </footer>
   );

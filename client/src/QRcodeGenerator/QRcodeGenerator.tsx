@@ -13,7 +13,7 @@ const QRCodeGenerator = () => {
   const [form] = Form.useForm();
 
   const generateQRCode = async (id: number) => {
-    const qrCodeData = `http://localhost:3000/user/${id}`;
+    const qrCodeData = `http://192.168.0.141:3000/UserPage/${id}`;
     setUrl(qrCodeData);
   };
   const onFinish = (values: any) => {

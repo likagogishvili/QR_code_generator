@@ -21,7 +21,7 @@ function AddNewUser(props: any) {
     };
 
     axios
-      .post("http://localhost:3001/add-user", {
+      .post("http://192.168.0.141:3001/add-user", {
         newUser: newUserForPost,
       })
       .then(function () {
