@@ -8,7 +8,7 @@ import Header from "../Header/Header"
 
 function LandingPage() {
   const { setUsers } = useStore();
-  let usersURl = "http://192.168.0.141:3001/get-users";
+  let usersURl = "http://localhost:3001/get-users";
   const [updateUserData, setUpdateUserData] = useState(false);
 
   //Get Users Data

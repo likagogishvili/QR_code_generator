@@ -17,7 +17,7 @@ import "./userPage.scss";
 function UserPage() {
   const { id } = useParams();
   const [user, setUser] = useState<User | null>(null);
-  let userURL = "http://192.168.0.141:3001/get-user";
+  let userURL = "http://localhost:3001/get-user";
 
   // Get User's Data
   useEffect(() => {
